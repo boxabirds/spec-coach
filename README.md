@@ -37,18 +37,17 @@ claude /plugin install spec-coach
 
 Note: plugin installation copies files only — bun must be installed separately for persistence to work.
 
-### Other Coding Agents (lite version)
+### Other Coding Agents (AGENTS.md)
 
-Copy the appropriate rules file into your project root:
+Copy `lite/AGENTS.md` into your project root. [AGENTS.md](https://agents.md/) is the universal standard for AI coding agent instructions, supported by Cursor, Windsurf, GitHub Copilot, Codex, Gemini CLI, Aider, Zed, Warp, and others.
 
-| Agent | File to copy |
-|-------|-------------|
-| Generic / AGENTS.md | `lite/AGENTS.md` |
-| Cursor | `lite/.cursorrules` |
-| Windsurf | `lite/.windsurfrules` |
-| GitHub Copilot | `lite/.github/copilot-instructions.md` |
+```bash
+cp lite/AGENTS.md your-project/AGENTS.md
+```
 
 The lite version has the same rubric and Socratic coaching style but no persistence, no evaluation mode, and no tool-context detection.
+
+> **Note:** Claude Code does not read AGENTS.md natively — it uses CLAUDE.md. For Claude Code, use the full plugin install above.
 
 ## Usage
 
@@ -101,11 +100,7 @@ Data is stored locally in `.spec-coach/data.db` (gitignored by default). No data
   plugin.json           # Plugin manifest for marketplace discovery
 
 lite/
-  AGENTS.md             # Generic rules file
-  .cursorrules          # Cursor rules file
-  .windsurfrules        # Windsurf rules file
-  .github/
-    copilot-instructions.md  # GitHub Copilot instructions
+  AGENTS.md             # Universal agent instructions (AGENTS.md standard)
 
 marketplace/
   .claude-plugin/
