@@ -15,39 +15,36 @@ A specification quality coaching skill for Claude Code and other coding agents. 
 
 ## Installation
 
-### Claude Code (full version)
+### Via Skills CLI (recommended)
 
-Requires [bun](https://bun.sh) for session persistence.
+Works with Claude Code, Cursor, Windsurf, Copilot, and any agent supporting the [skills.sh](https://skills.sh/) ecosystem:
 
 ```bash
-# Install bun if you don't have it
-curl -fsSL https://bun.sh/install | bash
+npx skills add boxabirds/spec-coach
+```
 
-# Clone into your project's skills directory
+This installs the full skill including persistence. Requires [bun](https://bun.sh) for session history:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+### Manual install (Claude Code)
+
+```bash
 git clone https://github.com/boxabirds/spec-coach.git
 cp -r spec-coach/.claude/skills/spec-coach your-project/.claude/skills/
 ```
 
-Or install as a Claude Code plugin:
-```bash
-# Add the marketplace catalog, then install
-claude /plugin marketplace add https://raw.githubusercontent.com/boxabirds/spec-coach/main/marketplace/.claude-plugin/marketplace.json
-claude /plugin install spec-coach
-```
+### AGENTS.md (lite version)
 
-Note: plugin installation copies files only — bun must be installed separately for persistence to work.
-
-### Other Coding Agents (AGENTS.md)
-
-Copy `lite/AGENTS.md` into your project root. [AGENTS.md](https://agents.md/) is the universal standard for AI coding agent instructions, supported by Cursor, Windsurf, GitHub Copilot, Codex, Gemini CLI, Aider, Zed, Warp, and others.
+For agents that don't support Skills 2.0, copy `lite/AGENTS.md` into your project root. [AGENTS.md](https://agents.md/) is the universal standard supported by Cursor, Windsurf, GitHub Copilot, Codex, Gemini CLI, Aider, Zed, Warp, and others.
 
 ```bash
 cp lite/AGENTS.md your-project/AGENTS.md
 ```
 
 The lite version has the same rubric and Socratic coaching style but no persistence, no evaluation mode, and no tool-context detection.
-
-> **Note:** Claude Code does not read AGENTS.md natively — it uses CLAUDE.md. For Claude Code, use the full plugin install above.
 
 ## Usage
 
