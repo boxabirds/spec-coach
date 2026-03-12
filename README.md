@@ -29,6 +29,8 @@ This installs the full skill including persistence. Requires [bun](https://bun.s
 curl -fsSL https://bun.sh/install | bash
 ```
 
+To update to the latest version, re-run `npx skills add boxabirds/spec-coach`. There is no auto-update — installed skills are static snapshots.
+
 ### Manual install (Claude Code)
 
 ```bash
