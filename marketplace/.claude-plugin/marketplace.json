@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "spec-coach-marketplace",
+  "owner": {
+    "name": "Great Creations London Ltd",
+    "email": "julian@greatcreations.com"
+  },
+  "metadata": {
+    "description": "Specification quality coaching tools for development teams",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "spec-coach",
+      "source": {
+        "source": "github",
+        "repo": "boxabirds/spec-coach"
+      },
+      "description": "Coaches you on specification quality using a six-dimension rubric — testability, edge cases, failure modes, constraints, decomposition, and autonomy calibration",
+      "keywords": [
+        "specifications",
+        "requirements",
+        "acceptance-criteria",
+        "user-stories",
+        "spec-quality",
+        "coaching"
+      ],
+      "category": "workflow"
+    }
+  ]
+}

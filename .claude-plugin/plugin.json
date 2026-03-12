@@ -1,0 +1,22 @@
+{
+  "name": "spec-coach",
+  "version": "0.1.0",
+  "description": "Coaches you on specification quality using a six-dimension rubric — testability, edge cases, failure modes, constraints, decomposition, and autonomy calibration. Activates automatically when you discuss requirements or start building without a spec.",
+  "author": {
+    "name": "Great Creations London Ltd",
+    "email": "julian@greatcreations.com"
+  },
+  "homepage": "https://github.com/boxabirds/spec-coach",
+  "repository": "https://github.com/boxabirds/spec-coach",
+  "license": "Apache-2.0",
+  "keywords": [
+    "specifications",
+    "requirements",
+    "acceptance-criteria",
+    "user-stories",
+    "spec-quality",
+    "coaching",
+    "rubric",
+    "testability"
+  ]
+}
