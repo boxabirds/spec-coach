@@ -28,11 +28,14 @@ git clone https://github.com/boxabirds/spec-coach.git
 cp -r spec-coach/.claude/skills/spec-coach your-project/.claude/skills/
 ```
 
-Or install as a plugin (once marketplace support is available):
+Or install as a Claude Code plugin:
 ```bash
-claude /plugin marketplace add https://github.com/boxabirds/spec-coach
+# Add the marketplace catalog, then install
+claude /plugin marketplace add https://raw.githubusercontent.com/boxabirds/spec-coach/main/marketplace/.claude-plugin/marketplace.json
 claude /plugin install spec-coach
 ```
+
+Note: plugin installation copies files only — bun must be installed separately for persistence to work.
 
 ### Other Coding Agents (lite version)
 
