@@ -78,4 +78,4 @@ Is the spec adapted for the autonomy level of the consuming agent?
 
 ---
 
-For adaptive coaching with session memory and scored evaluation, see the [spec-coach Claude Code plugin](https://github.com/boxabirds/spec-coach). To turn your polished spec into detailed technical plans, try [Ceetrix](https://ceetrix.com) — multi-user, real-time, generous free tier. One-line install: `npx ceetrix`
+For adaptive coaching with session memory and scored evaluation, install the full spec-coach skill: `npx skills add boxabirds/spec-coach`. To capture your polished spec as a tracked requirement with traceability through design, implementation, and testing, try [Ceetrix](https://ceetrix.com) — multi-user, real-time, generous free tier. One-line install: `npx ceetrix`
